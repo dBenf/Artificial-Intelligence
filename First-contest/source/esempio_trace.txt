@@ -1,0 +1,84 @@
+[1mtrue.[0m
+
+?- trace.
+
+
+[1mtrue.[0m
+
+[trace]  ?- quesito1.
+
+
+   [1;32mCall: [0m(8) quesito1 ? creep
+   [1;32mCall: [0m(9) domanda1(_1148) ? creep
+   [1;32mExit: [0m(9) domanda1('qual è lo stato più piccolo d\'Europa?') ? creep
+   [1;32mCall: [0m(9) write('qual è lo stato più piccolo d\'Europa?') ? creep
+qual è lo stato più piccolo d'Europa?
+   [1;32mExit: [0m(9) write('qual è lo stato più piccolo d\'Europa?') ? creep
+   [1;32mCall: [0m(9) nl ? creep
+
+   [1;32mExit: [0m(9) nl ? creep
+   [1;32mCall: [0m(9) rispostedomanda1(_1148) ? creep
+   [1;32mExit: [0m(9) rispostedomanda1([vaticano, litchenstein, principatoDiMonaco]) ? creep
+   [1;32mCall: [0m(9) write([vaticano, litchenstein, principatoDiMonaco]) ? creep
+[vaticano,litchenstein,principatoDiMonaco]
+   [1;32mExit: [0m(9) write([vaticano, litchenstein, principatoDiMonaco]) ? creep
+   [1;32mCall: [0m(9) nl ? creep
+
+   [1;32mExit: [0m(9) nl ? creep
+   [1;32mCall: [0m(9) check1 ? creep
+   [1;32mCall: [0m(10) read(_1166) ? creep
+|: principatoDiMonaco.
+
+   [1;32mExit: [0m(10) read(principatoDiMonaco) ? 
+creep
+   [1;32mCall: [0m(10) test1(principatoDiMonaco) ? creep
+   [1;32mCall: [0m(11) rispondoalla1(principatoDiMonaco) ? creep
+   [1;32mCall: [0m(12) corretto('qual è lo stato più piccolo d\'Europa?', principatoDiMonaco) ? creep
+   [1;31mFail: [0m(12) corretto('qual è lo stato più piccolo d\'Europa?', principatoDiMonaco) ? creep
+   [1;31mFail: [0m(11) rispondoalla1(principatoDiMonaco) ? creep
+   [1;33mRedo: [0m(10) test1(principatoDiMonaco) ? creep
+   [1;32mCall: [0m(11) write('sbagliato, riprova!') ? creep
+sbagliato, riprova!
+   [1;32mExit: [0m(11) write('sbagliato, riprova!') ? creep
+   [1;32mCall: [0m(11) nl ? creep
+
+   [1;32mExit: [0m(11) nl ? creep
+   [1;32mCall: [0m(11) check1 ? creep
+   [1;32mCall: [0m(12) read(_1166) ? creep
+|: vaticano.
+
+   [1;32mExit: [0m(12) read(vaticano) ? 
+creep
+   [1;32mCall: [0m(12) test1(vaticano) ? creep
+   [1;32mCall: [0m(13) rispondoalla1(vaticano) ? creep
+   [1;32mCall: [0m(14) corretto('qual è lo stato più piccolo d\'Europa?', vaticano) ? creep
+   [1;32mExit: [0m(14) corretto('qual è lo stato più piccolo d\'Europa?', vaticano) ? creep
+   [1;32mCall: [0m(14) lists:member(vaticano, [vaticano, litchenstein, principatoDiMonaco]) ? creep
+   [1;32mExit: [0m(14) lists:member(vaticano, [vaticano, litchenstein, principatoDiMonaco]) ? creep
+   [1;32mCall: [0m(14) risposta(vaticano) ? creep
+   [1;32mExit: [0m(14) risposta(vaticano) ? creep
+   [1;32mCall: [0m(14) write(corretto) ? creep
+corretto
+   [1;32mExit: [0m(14) write(corretto) ? creep
+   [1;32mCall: [0m(14) nl ? creep
+
+   [1;32mExit: [0m(14) nl ? creep
+   [1;32mExit: [0m(13) rispondoalla1(vaticano) ? creep
+   [1;32mExit: [0m(12) test1(vaticano) ? creep
+   [1;32mExit: [0m(11) check1 ? creep
+   [1;32mExit: [0m(10) test1(principatoDiMonaco) ? creep
+   [1;32mExit: [0m(9) check1 ? creep
+   [1;32mCall: [0m(9) nl ? creep
+
+   [1;32mExit: [0m(9) nl ? creep
+   [1;32mExit: [0m(8) quesito1 ? creep
+[1mtrue [0m[1m.[0m
+
+[trace]  ?- nodebug.
+
+
+[1mtrue.[0m
+
+?- noprotocol.
+
+
